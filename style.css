@@ -78,6 +78,7 @@ button:hover {
     width: 100%;
     bottom: 0;
     color: #fff;
+    text-align: center;
 }
 
 .footer a {
