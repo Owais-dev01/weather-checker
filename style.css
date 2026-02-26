@@ -1,0 +1,114 @@
+html,
+body {
+    margin: 0;
+    padding: 0;
+    overflow-x: hidden;
+}
+
+body {
+    font-family: 'Poppins', sans-serif;
+    height: 100vh;
+    display: flex;
+    flex-direction: column;
+}
+
+
+.logo {
+    font-size: 2.5rem;
+    margin-right: 0.5rem;
+}
+
+.hero {
+    flex: 1;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    background: url('./bg-gif.gif') center/cover no-repeat,
+        linear-gradient(135deg, #74ABE2 0%, #5563DE 100%);
+}
+
+form {
+    display: flex;
+    gap: 0.5rem;
+    flex-wrap: wrap;
+}
+
+input[type="text"] {
+    width: 100%;
+    padding: 0.75rem 1rem;
+    border: 2px solid #ccc;
+    border-radius: 6px;
+    font-size: 1rem;
+    transition: border-color 0.3s;
+}
+
+input[type="text"]:focus {
+    outline: none;
+    border-color: #5563DE;
+}
+
+button {
+    padding: 0.75rem 1.5rem;
+    border: none;
+    border-radius: 6px;
+    background: #5563DE;
+    color: #fff;
+    font-size: 1rem;
+    cursor: pointer;
+    transition: background 0.3s;
+    flex: 0 0 auto;
+    width: 100%;
+}
+
+button:hover {
+    background: #4351c7;
+}
+
+#weather-result {
+    margin-top: 1rem;
+    line-height: 1.5;
+}
+
+#weather-result h2 {
+    margin-bottom: 0.5rem;
+}
+
+.footer {
+    position: fixed;
+    width: 100%;
+    bottom: 0;
+    color: #fff;
+}
+
+.footer a {
+    color: #fff;
+}
+
+.weather-icon {
+    margin-right: 0.5rem;
+    font-size: 2rem;
+    vertical-align: middle;
+    color: #ffcc00;
+}
+
+.weather-header {
+    text-align: center;
+    color: #fff;
+    font-size: 2.5rem;
+}
+
+@media (max-width: 480px) {
+    header h1 {
+        font-size: 2rem;
+    }
+
+    .card {
+        padding: 1.5rem;
+        margin: 0.5rem 0;
+    }
+
+    button {
+        width: 100%;
+        margin-top: 0.5rem;
+    }
+}
